@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Dataset (khong day bo anh 2GB len GitHub)
+chest_xray/
+*.zip
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
