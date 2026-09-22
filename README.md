@@ -26,25 +26,25 @@ Dự án này giải quyết bài toán phân loại nhị phân (Binary Image C
 
 ```text
 Chest_Xray_Pneumonia/
-├── assets/                  # Logo và biểu tượng phổi y tế trong suốt (PNG, ICO)
+├── assets/                 
 │   ├── lungs_icon.png
 │   └── lungs_icon.ico
-├── chest_xray/              # Toàn bộ bộ dữ liệu ảnh X-quang (>5.800 ảnh)
+├── chest_xray/             
 │   └── chest_xray/
-│       ├── train/           # NORMAL (1.341 ảnh) | PNEUMONIA (3.875 ảnh)
-│       ├── val/             # Tập kiểm định trong quá trình huấn luyện
-│       └── test/            # Tập kiểm thử độc lập (624 ảnh)
-├── notebooks/               # Jupyter Notebooks nghiên cứu & thực nghiệm mô hình
+│       ├── train/          
+│       ├── val/             
+│       └── test/          
+├── notebooks/             
 │   ├── NTT_ChestXRay_Sigmoid.ipynb
 │   └── NTT_ChestXRay_Pneumonia.ipynb
-├── saved_models/            # Nơi lưu trữ checkpoint mô hình đã huấn luyện
+├── saved_models/          
 │   └── best_chest_xray_model.pth
-├── src/                     # Mã nguồn huấn luyện độc lập qua dòng lệnh
-│   └── train.py             # Script huấn luyện CLI & lưu model
-├── du_doan_viem_phoi.py     # Ứng dụng Desktop GUI hoàn chỉnh (CustomTkinter)
-├── requirements.txt         # Danh sách thư viện cần thiết
-├── .gitignore               # Cấu hình bỏ qua cache và dataset lớn khi push Git
-└── README.md                # Tài liệu hướng dẫn sử dụng dự án
+├── src/                  
+│   └── train.py             
+├── du_doan_viem_phoi.py     
+├── requirements.txt       
+├── .gitignore              
+└── README.md               
 ```
 
 ---
