@@ -1,4 +1,4 @@
-# Hệ Thống Phân Loại Viêm Phổi Từ Ảnh X-Quang Lồng Ngực (PyTorch & CustomTkinter)
+# Dự Án Phân Loại Viêm Phổi Từ Ảnh X-Quang Lồng Ngực
 
 Dự án Học Sâu (Deep Learning) toàn diện về bài toán Thị giác máy tính trong Y tế (Medical Computer Vision): **Phát hiện Viêm Phổi (PNEUMONIA) và Phổi Bình Thường (NORMAL) từ ảnh chụp X-quang lồng ngực** sử dụng **PyTorch thuần**.
 
@@ -64,7 +64,7 @@ Chest_Xray_Pneumonia/
 - **Bước 3 (Xử lý mất cân bằng lớp - Class Imbalance):**
   - Trong tập dữ liệu huấn luyện, số lượng ảnh `NORMAL` là 1.341 và `PNEUMONIA` là 3.875 (tỷ lệ xấp xỉ $1 : 2.89$).
   - Tính hệ số cân bằng trọng số cho lớp dương (Viêm phổi):
-    $$\text{pos\_weight} = \frac{N_{\text{NORMAL}}}{N_{\text{PNEUMONIA}}} = \frac{1341}{3875} \approx 0.346$$
+    $$\text{pos-weight} = \frac{N_{\text{NORMAL}}}{N_{\text{PNEUMONIA}}} = \frac{1341}{3875} \approx 0.346$$
   - Áp dụng hàm mất mát `BCEWithLogitsLoss(pos_weight=pos_weight)` kết hợp với thuật toán tối ưu `Adam(lr=0.0005)`.
 - **Bước 4 (Cơ chế suy luận & Dự đoán xác suất - Sigmoid):**
   - Mô hình trả về 1 Logit $z$. Xác suất bệnh nhân bị viêm phổi được tính qua hàm Sigmoid:
